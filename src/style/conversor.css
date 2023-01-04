@@ -1,0 +1,112 @@
+#container2 {
+  width: 66%;
+  border-radius: 0.4rem;
+  padding: .7rem;
+  background: rgba(6, 46, 37, 0.301);
+  box-shadow:  .5rem .5rem .5rem rgba(0, 0, 0, 0.274);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container2 h1{
+  font-variant: small-caps;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  color:#ffff;
+}
+
+/* converter container */
+.change {
+  display: flex;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+label p, b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .4rem;
+}
+
+.convert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.convert select {
+  cursor: pointer;
+  padding: .4rem;
+  margin: .3rem 0 .2rem 0;
+  width: 10rem;
+  background: #bbbdbe36;
+  border: 0.1rem solid #d6d7d896;
+  border-radius: 0.3rem;
+  color: #d9d9df;
+  font-weight: 700;
+}
+
+#input-real {
+  width: 10rem;
+  padding: .4rem;
+  margin: .3rem 0 .2rem 0;
+  background: #bbbdbe36;
+  border: 0.1rem solid #d6d7d896;
+  border-radius: 0.3rem;
+  color: #ffff;
+}
+#input-real::placeholder {
+  color: rgba(255, 255, 255, 0.651);
+  font-size: .7rem;
+}
+
+#convert-button{
+  cursor: pointer;
+  background-color: #d9dddf70;
+  border: .15rem solid #d6d7d8b6;
+  border-radius: 0.4rem;
+  width: 10rem;
+  padding: .5rem;
+  margin: .5rem 0 0 0;
+  color: #fff;
+  transition: .4s;
+}
+#convert-button:hover {
+  background-color: #6d707052;
+}
+
+/* valor convertido container */
+.currency-change {
+  width: 9rem;
+}
+
+.currency-change hr {
+  position: relative;
+  transform: rotate(90deg);
+  right: 5.8rem;
+  width: 100%;
+  height: .1rem;
+  border-radius: 1rem;
+  margin-top: .8rem;
+  background: rgba(255, 255, 255, 0.267);
+}
+
+.currency-container {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#currency-img,
+.image-brasil {
+  height: 2rem;
+  margin: 0.2rem;
+}

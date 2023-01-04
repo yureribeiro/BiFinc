@@ -1,0 +1,50 @@
+@import "./cotacoes.css";
+@import "./conversor.css";
+@import "./cripto.css";
+@import "./sidebar.css";
+@import "./chart.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {  
+  height: 100vh;
+  background-image: url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+}
+
+#dashboard {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  background: rgba(57, 58, 58, 0.548);
+  width: 100%;
+  margin: 1rem;
+  border-radius: 0.7rem;
+  padding: .7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+  padding: 0 .2rem 0 1.5rem;
+  height: 100%;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  gap: 0 .8rem;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/index.css">
+  <!--Fonte-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!--BoxIcons-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <title>BiFinc | Painel</title>
+</head>
+<body>
+<div id="dashboard">
+    <!--Side Bar-->
+    <div class="sidebar">
+      <div class="toggle">
+          <i class="bx bx-chevron-right"></i>
+      </div>
+          <div class="logo">
+            <img src="./assets/logo.svg" alt="...">
+            <h3>Bifinc</h3>
+          </div>
+
+          <nav>
+            <div class="nav-title">
+                Menu
+            </div>
+              <ul>
+                  <li class="nav-item active">
+                    <a href="index.html" title="Painel"> <i class="bx bxs-dashboard"></i> 
+                      <span>Painel</span></a>  
+                  </li>
+                  <li class="nav-item">
+                   <a href="notas.html" title="Notas"> <i class='bx bxs-notepad'></i> 
+                    <span>Notas</span></a> 
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" title="Definições"><i class="bx bxs-cog"></i> 
+                      <span>Definições</span></a>  
+                  </li>
+              </ul>
+            <hr>
+              <div class="nav-title">
+                  Suporte
+              </div>
+            <ul>
+                <li class="nav-item">
+                  <a  class="suporte" href="suporte.html" title="Suporte"><i class="bx bxs-help-circle"></i> 
+                    <span class="suporteSpan">Obter ajuda</span></a> 
+                </li>
+            </ul>
+            <p class="sideP">2022 ° BiFinc</p>
+          </nav>
+    </div>
+
+  <main>
+    <section>
+      <!--Cotações-->
+      <div id="container1">
+
+        <h1>Moedas</h1>
+          <div class="coins">
+
+            <div class="dolar">
+              <h4 id="title"></h4>
+                <p id="date">
+                  Data: <span id="thisdate"></span>
+                </p>
+                  <p id="value">
+                    Máxima = <span id="maxvalue"></span>
+                    <br>
+                    Mínima = <span id="minvalue"></span>
+                  </p>
+              </div>
+  
+            <div class="euro">
+              <h4 id="title-eur"></h4>
+                <p id="date">
+                  Data: <span id="thisdate-eur"></span>
+                </p>
+                  <p id="value">
+                    Máxima = <span id="maxvalue-eur"></span>
+                    <br>
+                    Mínima = <span id="minvalue-eur"></span>
+                  </p>
+              </div>
+          
+              <div class="bitcoin">
+                <h4 id="title-btc"></h4>
+                  <p id="date">
+                    Data: <span id="thisdate-btc"></span>
+                  </p>
+                    <p id="value">
+                      Máxima = <span id="maxvaluebtc"></span>
+                      <br>
+                      Mínima = <span id="minvaluebtc"></span>
+                    </p>
+                </div>
+
+            </div>
+          </div>
+
+          <!-- Conversor de Moedas -->
+              <div id="container2">
+                  <h1>Conversor</h1>
+                  
+              <div class="change">  
+                <div class="convert">
+                      <select>
+                        <option>Real Brasileiro</option>
+                      </select>
+                <label>
+                    <p> <strong> para </strong> </p>
+                    <select id="select">
+                      <option value="US$ Dólar americano">$ Dólar Americano</option>
+                      <option value="€ Euro">€ Euro</option>
+                      <option value="Bitcoin">Bitcoin</option>
+                    </select>
+                </label>
+                  <label>
+                      <b>Valor</b>
+                      <input  id ="input-real" placeholder="digite o valor" type="text">
+                  </label>
+                      <button id="convert-button" type="button">Converter</button>
+                </div>
+                  <div class="currency-change">
+                      <div class="currency-container">
+                          <img src="./assets/brazil.png" class="image-brasil">
+                          <p class="currency-name">Real</p>
+                          <p class="currency-value" id="real-text">R$ 10.000,00</p>
+                      </div>
+                      <hr>
+                      <div class="currency-container">
+                          <img src="./assets/eua.png" id="currency-img" alt="usa-flag">
+                          <p class="currency-name" id="currency-name">Dólar americano</p>
+                          <p  class="currency-value" id="currency-value-text">US$ 2.000,00</p>
+                      </div>
+                  </div>
+                </div>
+            </div>  
+    </section>
+
+    <section>
+        <!--Cripto Moedas-->
+        <div id="container3">
+          <h1>Criptomoedas</h1>
+          
+          <table class="tablecoins">
+            <thead>
+              <tr>
+                <th scope="col" id="img">Moeda</th>
+                <th scope="col" id="rank">Rank</th>
+                <th scope="col" id="name">Nome</th>
+                <th scope="col" id="price">Preço</th>
+                <th scope="col" id="symbol">Simbolo</th>
+              </tr>
+            </thead>
+              <tbody id="data">
+              </tbody>
+          </table>
+        </div>
+
+        <div id="container4">
+            <div>
+              ...
+            </div>
+        </div>
+    </section>
+  </main>
+  
+</div>
+
+<script src="index.js" type="module"></script>
+</body>
+</html>

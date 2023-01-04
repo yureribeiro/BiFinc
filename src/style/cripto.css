@@ -1,0 +1,78 @@
+@import "./sidebar.css";
+
+#container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: .7rem;
+  border-radius: 0.4rem;
+  background: rgba(8, 46, 37, 0.301);
+  box-shadow:  .5rem .5rem .5rem rgba(0, 0, 0, 0.274);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  color: #ffff;
+}
+
+#container3 h1 {
+  font-variant: small-caps;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tablecoins {
+  margin-top: .5rem;
+  display: inline-block;
+  border: .1rem solid rgba(226, 226, 226, 0.21);
+  border-radius: 0.4rem;
+  transition: 1s;
+}
+
+.tablecoins tbody {
+  height: 9.5rem;
+  display: inline-block;
+  overflow-y: scroll;
+}
+
+.tablecoins th {
+  width: 100%;
+  border: .1rem solid rgba(226, 226, 226, 0.21);
+  margin: 0.8rem;
+  padding: .5rem;
+  color: rgb(107, 201, 177);
+}
+
+.tablecoins td {
+  text-align: center;
+  padding: 0.2rem;
+  border: .1rem solid rgba(226, 226, 226, 0.21);
+}
+
+#rank {
+  width: 3.5rem;
+}
+
+#name {
+  width: 14rem;
+}
+
+#price {
+  width: 6.4rem;
+   
+}
+
+#symbol{
+  width: 6rem;
+}
+
+#img {
+  width: 4.5rem;
+}
+
+#logo {
+  width: 1.5rem;
+  height: 1.5rem;
+}

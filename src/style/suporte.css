@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {  
+  height: 100vh;
+  background-image: url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  background: rgba(175, 177, 177, 0.548);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  box-shadow:  .5rem .5rem .5rem rgba(0, 0, 0, 0.274);
+  padding: .5rem .8rem;
+  border: .15rem solid #ffffffab;
+  border-radius: .5rem ;
+  color: white;
+}
+a:hover{
+  background-color: #7b7e7e52;
+  border: .15rem solid #598f69ce;
+}
+
+h6 {
+  text-align: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  background: rgba(57, 58, 58, 0.548);
+  box-shadow:  .5rem .5rem .5rem rgba(0, 0, 0, 0.274);
+  padding: .5rem;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  width: 19rem;
+  height: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  background: rgba(57, 58, 58, 0.548);
+  box-shadow:  .5rem .5rem .5rem rgba(0, 0, 0, 0.274);
+  padding: 1rem;
+  gap: .5rem;
+  border-radius: .5rem;
+}
+
+label {
+  color: white;
+  font-size: bold;
+}
+
+input {
+  width: 90%;
+  padding: .4rem;
+  border: 1px solid transparent;
+  border-radius: .4rem;
+  margin-bottom: .5rem;
+  background-color:  rgba(136, 141, 141, 0.459);
+  color: white;
+}
+
+textarea {
+  outline: none;
+  width: 90%;
+  max-width: 100%;
+  padding: 2rem;
+  background-color: rgba(136, 141, 141, 0.459);
+  border-radius: .4rem;
+  color: white;
+}
+textarea::placeholder {
+  color: white;
+  font-size: .7rem;
+}
+
+
+button {
+  cursor: pointer;
+  padding: .5rem;
+  width: 90%;
+  background-color: #d9dddf70;
+  border: .15rem solid #d6d7d896;
+  color: white;
+  font-size: bold;
+  border-radius: .4rem;
+  margin: .5rem 0;
+}
+button:hover{
+  background-color: #73757552;
+  border: .15rem solid #598f69ce;
+}
+
+p {
+  color: #dadadd;
+  margin-top: 1rem;
+  font-size: .8rem;
+}
