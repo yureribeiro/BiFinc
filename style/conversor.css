@@ -1,5 +1,6 @@
 #container2 {
-  width: 66%;
+  height: 100%;
+  width: 66% !important;
   border-radius: 0.4rem;
   padding: .7rem;
   background: rgba(6, 46, 37, 0.301);
