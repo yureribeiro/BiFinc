@@ -1,7 +1,8 @@
 const url = 'https://economia.awesomeapi.com.br/last/'
 const coins = 'USD-BRL,EUR-BRL,BTC-BRL'
 
-  fetch(url + coins)
+async function cotas() {
+ const cotacoes = await fetch(url + coins)
   .then(function(response){
     return response.json()
   })
@@ -55,7 +56,10 @@ const coins = 'USD-BRL,EUR-BRL,BTC-BRL'
       currency: 'BRL'
     })
   })
+  return cotacoes
+}
+  
 
 
 
-  export default coins
+  export default cotas

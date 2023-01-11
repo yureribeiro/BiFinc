@@ -29,7 +29,7 @@
             </div>
               <ul>
                   <li class="nav-item active">
-                    <a href="index.html" title="Painel"> <i class="bx bxs-dashboard"></i> 
+                    <a id="painel" href="#" title="Painel"> <i class="bx bxs-dashboard"></i> 
                       <span>Painel</span></a>  
                   </li>
                   <li class="nav-item">
@@ -46,8 +46,8 @@
                   Suporte
               </div>
             <ul>
-                <li class="nav-item">
-                  <a  class="suporte" href="suporte.html" title="Suporte"><i class="bx bxs-help-circle"></i> 
+                <li class="nav-item" id="suporte">
+                  <a class="suporte" href="#" title="Suporte"><i class="bx bxs-help-circle"></i> 
                     <span class="suporteSpan">Obter ajuda</span></a> 
                 </li>
             </ul>
@@ -55,7 +55,7 @@
           </nav>
     </div>
 
-  <main>
+  <main id="main">
     <section>
       <!--Cotações-->
       <div id="container1">
@@ -170,6 +170,27 @@
     </section>
   </main>
   
+  <div id="formSuport">
+    <h6 class="h6-suporte">Olá, fique a vontade para nos mandar <br> 
+      uma mensagem de email, <br> 
+      basta preencher os campos abaixo</h6>
+  
+    <form action="https://formsubmit.co/el/ceruhe"
+      method="POST"  
+      data-form>
+   
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" placeholder="digite sua mensagem aqui..." required></textarea>
+        <button type="submit" data-button>Enviar</button>
+    </form>
+  
+      <p class="p-suporte">Bifinc ° 2022</p>
+  </div>
+
 </div>
 
 <script src="index.js" type="module"></script>

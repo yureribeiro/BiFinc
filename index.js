@@ -1,15 +1,16 @@
-import toggle from "./sidebar.js"
-import cotaçoes from "./cotacoes.js"
+import menu from "./sidebar.js"
+import cotas from "./cotacoes.js"
 import ConvertValues from "./conversor.js"
-import criptos from "./cripto.js"
-import FormSubmit from "./suporte.js"
+import coinRank from "./cripto.js"
+import { FormSubmit, formSubmit } from "./form.js"
 
 
 
-cotaçoes()
+cotas()
 ConvertValues()
-toggle()
-criptos()
-FormSubmit()
+menu()
+coinRank()
+formSubmit
+FormSubmit
 
 

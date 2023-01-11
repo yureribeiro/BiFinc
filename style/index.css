@@ -3,6 +3,7 @@
 @import "./cripto.css";
 @import "./sidebar.css";
 @import "./chart.css";
+@import "./suporte.css";
 
 * {
   margin: 0;
@@ -23,15 +24,15 @@ body {
 }
 
 #dashboard {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); 
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px); 
   background: rgba(57, 58, 58, 0.548);
   width: 100%;
   margin: 1rem;
   border-radius: 0.7rem;
   padding: .7rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 

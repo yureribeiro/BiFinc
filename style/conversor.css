@@ -4,8 +4,6 @@
   padding: .7rem;
   background: rgba(6, 46, 37, 0.301);
   box-shadow:  .5rem .5rem .5rem rgba(0, 0, 0, 0.274);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
   color: #ffff;
   display: flex;
   flex-direction: column;
@@ -69,8 +67,8 @@ label p, b {
 
 #convert-button{
   cursor: pointer;
-  background-color: #d9dddf70;
-  border: .15rem solid #d6d7d8b6;
+  background-color: #d9dddf3f;
+  border: .12rem solid #d6d7d8b6;
   border-radius: 0.4rem;
   width: 10rem;
   padding: .5rem;
@@ -79,7 +77,7 @@ label p, b {
   transition: .4s;
 }
 #convert-button:hover {
-  background-color: #6d707052;
+  background-color: #6d707036;
 }
 
 /* valor convertido container */

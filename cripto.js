@@ -9,14 +9,15 @@ const formater = Intl.NumberFormat('pt-br', {
   notation: 'compact'
 })
 
-fetch(`${url}?${queryString}`, { 
-  method: 'GET',
-  headers: {
-    'Content-Type': 'application/json',
-    'X-My-Custom-Header': `${apiKey}`,
-    'Access-Control-Allow-Origin': 'https://bifinc.vercel.app/'
-  }
-})
+async function coinRank() {
+  const rank = await fetch(`${url}?${queryString}`, { 
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-My-Custom-Header': `${apiKey}`,
+      'Access-Control-Allow-Origin': 'https://bifinc.vercel.app/'
+    }
+  })
 .then((response) => {
   if (response.ok) {
     response.json().then((json) => {
@@ -37,13 +38,15 @@ fetch(`${url}?${queryString}`, {
       })
       //For Loop Ends
       document.getElementById('data').innerHTML = cryptoCoin
-    })
-  }
-})
-.catch((error) => {
-  console.log(error)
-})
+      })
+    }
+  })
+  .catch((error) => {
+    console.log(error)
+  })
+
+ return rank
+} 
 
 
-
-export default apiKey
+export default coinRank

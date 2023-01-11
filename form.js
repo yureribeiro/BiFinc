@@ -1,4 +1,4 @@
-class FormSubmit {
+export class FormSubmit {
   constructor(settings) {
     this.settings = settings;
     this.form = document.querySelector(settings.form);
@@ -57,10 +57,9 @@ class FormSubmit {
   }
 }
 
-const formSubmit = new FormSubmit({
+export const formSubmit = new FormSubmit({
   form: "[data-form]",
   button: "[data-button]",
 });
 formSubmit.init();
 
-export default FormSubmit

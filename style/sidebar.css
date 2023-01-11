@@ -2,17 +2,16 @@
   border-radius: 0.7rem;
   width: 7.5rem;
   height: 100%;
-  background: rgba(6, 46, 37, 0.301);
+  background: rgba(6, 46, 37, 0.438);
   box-shadow:  .5rem .5rem .5rem rgba(0, 0, 0, 0.274);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
   transition: .4s ease-in-out;
   list-style: none;
 }
 
 .sidebar.open {
-  width: 17rem;
+  width: 14rem;
 }
+
 
 .sidebar .logo {
   width: 100%;
@@ -104,8 +103,8 @@
 
 .sidebar nav .nav-item span {
   color: #fff;
-  font-size: .94rem;
-  margin-left: .89rem;
+  font-size: .90rem;
+  margin-left: .85rem;
   opacity: 0;
   pointer-events: none;
 }
@@ -151,7 +150,7 @@
   transition: .2s linear;
 }
 .sidebar.open .toggle {
-  right: -13.7rem;
+  right: -12rem;
   transition: .4s ease-in-out;
 }
 .sidebar.open .toggle i {

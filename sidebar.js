@@ -2,7 +2,19 @@ const sidebar = document.querySelector('.sidebar')
 const navItems = document.querySelectorAll('nav .nav-item')
 const toggle = document.querySelector('.sidebar .toggle')
 
-//abrir e fechar menu.
+const suporte = document.getElementById('suporte')
+const painel = document.getElementById('painel')
+const main = [
+  document.getElementById('container1'),
+  document.getElementById('container2'), 
+  document.getElementById ('container3'), 
+  document.getElementById('container4')
+]
+
+const formS = document.getElementById('formSuport')
+
+function menu() {
+  //abrir e fechar menu.
 toggle.addEventListener('click', () => {
 
   if (sidebar.className === 'sidebar')
@@ -22,5 +34,16 @@ navItems.forEach(navItem => {
   })
 })
 
+suporte.addEventListener('click', () => {
+  main.forEach(element => element.style.display = 'none')
+  formS.style.display = 'block'
+})
 
-export default toggle
+painel.addEventListener('click', () => {
+  main.forEach(element => element.style.display = 'flex')
+  formS.style.display = 'none'
+})
+ 
+}
+
+export default menu
