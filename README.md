@@ -6,7 +6,7 @@ Com o BiFinc você tem:
 Tudo de forma prática e acessível num layout estilo Painel de controle.
 
 "Caso esteja vendo este repositório, este projeto ainda não está 100% completo e caso tenha algum comentario construtivo, <br>
-fique a vontade para preencher um formulário no menu 'Obter Ajuda'."
+fique a vontade para preencher o formulário no menu 'Obter Ajuda'."
 
 Visite: https://bifinc.vercel.app
 
