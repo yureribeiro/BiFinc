@@ -1,21 +1,20 @@
 const url = 'https://api.coinranking.com/v2/coins'
 const apiKey = 'coinranking0b1f9add8ef971d073a2528aed686ea47750ac8ecd299f12'
 
-const queryString = new URLSearchParams({
-  'x-access-token': apiKey,
-});
-
 const formater = Intl.NumberFormat('pt-br', {
-  notation: 'compact'
+  notation: 'compact',
+  
 })
+
+const queryString = new URLSearchParams({
+  'x-access-token': apiKey
+});
 
 async function coinRank() {
   const rank = await fetch(`${url}?${queryString}`, { 
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
-      'X-My-Custom-Header': `${apiKey}`,
-      'Access-Control-Allow-Origin': 'https://bifinc.vercel.app/'
+      'Content-Type': 'application/json'
     }
   })
 .then((response) => {

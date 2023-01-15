@@ -21,15 +21,18 @@ body {
   background-size: cover;
   font-family: 'Roboto', sans-serif;
   display: flex;
+  justify-content: center;
 }
 
 #dashboard {
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px); 
-  background: rgba(57, 58, 58, 0.548);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  background: rgba(49, 49, 49, 0.548);
+  max-width: 1300px;
   width: 100%;
   margin: 1rem;
   border-radius: 0.7rem;
+  border: .1rem solid #bbbdbe15;
   padding: .7rem;
   display: flex;
   justify-content: space-between;
@@ -49,3 +52,22 @@ section {
   display: flex;
   gap: 0 .8rem;
 }
+
+
+@media (max-width: 1236px) {
+  #dashboard {
+    min-width: 54rem;
+    width: 54rem;
+    height: 100%;
+  }
+  main {
+    gap: .5rem;
+    padding: 4.3rem 0 .5rem 0;
+    height: 100%;
+  }
+   section {
+    gap: .5rem .3rem;
+  }
+}
+
+

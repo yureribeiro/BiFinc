@@ -1,13 +1,12 @@
-
-
 const ctx = document.getElementById('myChart');
+  ctx.classList.add('chart')
 
  new Chart(ctx, {
   type: 'line',
   data: {
     labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
     datasets: [{
-      label: 'Dolar Comercial 1A 2022',
+      label: 'Dolar 1A 2022',
       data: [5.674, 5.242, 5.016, 4.690, 5.134, 4.989, 5.268, 5.085, 5.148, 5.191, 5.397, 5.312],
       borderWidth: 3,
       borderColor: 'rgba(107, 201, 177, 0.85)',
@@ -37,7 +36,6 @@ const ctx = document.getElementById('myChart');
       }
     }}
 });
-
 
 
 export default ctx

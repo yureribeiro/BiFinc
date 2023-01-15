@@ -5,14 +5,16 @@
   width: 100%;
   height: 100%;
   border-radius: 0.4rem;
+  border: .1rem solid #bbbdbe09;
   padding: .7rem;
-  background: rgba(8, 46, 37, 0.301);
+  background: rgba(6, 46, 37, 0.438);
   box-shadow:  .5rem .5rem .5rem rgba(0, 0, 0, 0.274);
   color: #ffff;
 }
 
 #container1 h1 {
   font-variant: small-caps;
+  margin-bottom: 1rem;
   font-size: 1.7rem;
   display: flex;
   justify-content: center;
@@ -44,4 +46,24 @@
 #value,
 #date {
   padding: 0.5rem 0;
+}
+
+@media (max-width: 1236px) {
+  #container1 {
+    padding: .5rem;
+  }
+  #container1 h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
+  .coins {
+    margin-top: .5rem;
+  }
+  .dolar,
+  .euro,
+  .bitcoin {
+  margin: .2rem .1rem;
+  padding: .4rem;
+  font-size: .9rem;
+  }
 }
