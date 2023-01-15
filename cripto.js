@@ -15,7 +15,8 @@ async function coinRank() {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
-      'API-key': apiKey
+      'API-key': apiKey,
+      credentials: 'include',
     }
   })
 .then((response) => {
