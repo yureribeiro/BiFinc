@@ -14,7 +14,8 @@ async function coinRank() {
   const rank = await fetch(`${url}?${queryString}`, { 
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'API-key': 'apikey'
     }
   })
 .then((response) => {
