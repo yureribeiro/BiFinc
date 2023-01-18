@@ -1,12 +1,11 @@
 # BiFinc
-Com o BiFinc você tem: 
+Com o BiFinc você tem uma interface fácil de usar, você pode converter moedas rapidamente, consultar uma classificação em tempo real das principais criptomoedas e ficar por dentro das últimas tendências. Além disso, com nossas cotações atualizadas para moedas fiduciárias, você sempre saberá o valor do seu dinheiro.
+
 - cotações (Api - Awesome)
 - conversor (Javascript puro)
 - rank de criptomoedas (CoinRanking Api)
-Tudo de forma prática e acessível num layout estilo Painel de controle.
 
-"Caso esteja vendo este repositório, este projeto ainda não está 100% completo e caso tenha algum comentario construtivo, <br>
-fique a vontade para preencher o formulário no menu 'Obter Ajuda'."
+Tudo de forma prática e acessível num layout estilo Painel de controle.
 
 Visite: https://bifinc.vercel.app
 

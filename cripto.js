@@ -13,7 +13,9 @@ async function coinRank() {
   const rank = await fetch(`${url}?${queryString}`, { 
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'API-key': apiKey,
+      'Access-Control-Allow-Origin': 'https://bifinc.vercel.app/'
     }
   })
 .then((response) => {
