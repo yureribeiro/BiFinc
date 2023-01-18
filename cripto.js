@@ -16,7 +16,7 @@ async function coinRank() {
     headers: {
       'Content-Type': 'application/json',
       'API-key': apiKey,
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': 'https://bifinc.vercel.app/'
     }
   })
 .then((response) => {
