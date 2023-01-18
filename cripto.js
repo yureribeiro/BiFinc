@@ -1,14 +1,13 @@
 const url = 'https://api.coinranking.com/v2/coins'
-const apiKey = 'coinranking0b1f9add8ef971d073a2528aed686ea47750ac8ecd299f12'
+const apiKey = process.env.CRIPTO_API_SECRET
 
 const formater = Intl.NumberFormat('pt-br', {
   notation: 'compact',
-  
 })
 
 const queryString = new URLSearchParams({
   'x-access-token': apiKey
-});
+})
 
 async function coinRank() {
   const rank = await fetch(`${url}?${queryString}`, { 

@@ -2,6 +2,7 @@
   "name": "bifinc",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/yureribeiro/Bifinc/issues"
   },
-  "homepage": "src/index.html"
+  "homepage": "src/index.html",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
 }
