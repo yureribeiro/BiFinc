@@ -4,6 +4,7 @@ Com o BiFinc você tem uma interface fácil de usar, você pode converter moedas
 - cotações (Api - Awesome)
 - conversor (Javascript puro)
 - rank de criptomoedas (CoinRanking Api)
+
 Tudo de forma prática e acessível num layout estilo Painel de controle.
 
 Visite: https://bifinc.vercel.app
