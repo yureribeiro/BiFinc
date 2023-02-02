@@ -1,15 +1,21 @@
-const url = 'https://api.coinranking.com/v2/coins'
+import dotenv from 'dotenv'
+
+dotenv.config()
 const apiKey = process.env.CRIPTO_API_SECRET
+
+const url = 'https://api.coinranking.com/v2/coins'
+
+const queryString = new URLSearchParams({
+  'x-access-token': apiKey
+});
 
 const formater = Intl.NumberFormat('pt-br', {
   notation: 'compact',
 })
 
-const queryString = new URLSearchParams({
-  'x-access-token': apiKey
-})
 
 async function coinRank() {
+  
   const rank = await fetch(`${url}?${queryString}`, { 
     method: 'GET',
     headers: {
